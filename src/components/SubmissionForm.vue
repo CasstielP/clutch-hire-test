@@ -59,7 +59,7 @@ const fields = [
   { id: "company", label: "Company", model: "company", type: "text" },
 ];
 
-const showThankYou = ref(false);
+const showThankYou = ref(true);
 const isSubmitting = ref(false);
 
 async function handleSubmit() {
@@ -102,17 +102,21 @@ async function handleSubmit() {
 .form-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: flex-start;
   width: 100%;
   max-width: 393px;
+  height: 852px;
   padding: 0 24px;
+  position: relative;
 }
 
 .logo {
   width: 122.83px;
   height: 40px;
-  margin-top: 40px;
-  margin-bottom: 120px;
+  position: absolute;
+  top: 40px;
+  left: 24px;
 }
 
 .form-title {
@@ -130,7 +134,8 @@ async function handleSubmit() {
   max-height: 852px;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1.6rem;
+  margin: 120px 0;
 }
 
 .form-group {
