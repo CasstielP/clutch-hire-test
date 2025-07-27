@@ -59,7 +59,7 @@ const fields = [
   { id: "company", label: "Company", model: "company", type: "text" },
 ];
 
-const showThankYou = ref(true);
+const showThankYou = ref(false);
 const isSubmitting = ref(false);
 
 async function handleSubmit() {
@@ -167,6 +167,10 @@ input {
   background-color: #f4f2ee;
   box-sizing: border-box;
   box-shadow: none;
+  font-family: "ABeeZee", sans-serif;
+  font-size: 15px;
+  color: #555552;
+  padding: 10px 12px;
 }
 
 .submit-btn {
