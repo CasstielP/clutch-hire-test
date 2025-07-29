@@ -31,7 +31,7 @@
 
       <div v-else class="thank-you">
         <div>Thank you</div>
-        <div>We will contact your<br />shortly</div>
+        <div>We will contact you<br />shortly</div>
       </div>
     </div>
   </div>
@@ -95,6 +95,7 @@ async function handleSubmit() {
 .page-wrapper {
   background-color: #f4f2ee;
   min-height: 100vh;
+  min-width: 360px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -159,7 +160,7 @@ label {
 }
 
 input {
-  width: 310px;
+  width: 100%;
   max-width: 310px;
   height: 40.32px;
   border-radius: 3.6px;
@@ -184,6 +185,7 @@ input {
   border: none;
   font-family: "ABeeZee", sans-serif;
   cursor: pointer;
+  margin-top: 20px;
 }
 
 .submit-btn:disabled {
